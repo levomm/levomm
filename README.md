@@ -39,6 +39,21 @@ AGENT -> TOOLS -> INFRASTRUCTURE -> RESULT
 
 ---
 
+## `// ACTIVITY. APPARENTLY COMMITS NEED A DASHBOARD.`
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=levomm&show_icons=true&hide_border=true&bg_color=0D1117&title_color=FF4D4D&icon_color=FF4D4D&text_color=C9D1D9&ring_color=FF4D4D" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=levomm&layout=compact&hide_border=true&bg_color=0D1117&title_color=FF4D4D&text_color=C9D1D9" alt="Top languages" />
+
+<br>
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=levomm&bg_color=0D1117&color=C9D1D9&line=FF4D4D&point=FFFFFF&area=true&hide_border=true" alt="Contribution graph" />
+
+</div>
+
+---
+
 ## `// THINGS THAT ACTUALLY EXIST`
 
 <table>
@@ -152,20 +167,6 @@ rules:
   - ship working systems before writing architecture poetry
 ```
 
----
-
-## `// TELEMETRY, BECAUSE APPARENTLY WE NEED GRAPHS`
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=levomm&show_icons=true&hide_border=true&bg_color=0D1117&title_color=FF4D4D&icon_color=FF4D4D&text_color=C9D1D9&ring_color=FF4D4D" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=levomm&layout=compact&hide_border=true&bg_color=0D1117&title_color=FF4D4D&text_color=C9D1D9" alt="Top languages" />
-
-<br>
-
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=levomm&bg_color=0D1117&color=C9D1D9&line=FF4D4D&point=FFFFFF&area=true&hide_border=true" alt="Contribution graph" />
-
-</div>
 
 ---
 
