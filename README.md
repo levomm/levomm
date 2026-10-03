@@ -1,8 +1,10 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:090909,55:111111,100:520000&text=YRJO%20%2F%2F%20LEVOMM&fontColor=EDEDED&fontSize=44&fontAlignY=35&desc=ANDROID-FIRST%20AI%20%C2%B7%20AGENTS%20%C2%B7%20AUTOMATION%20%C2%B7%20SECURITY&descAlignY=58&descSize=15&animation=fadeIn" alt="YRJO // LEVOMM" />
+<img width="100%" src="./assets/profile-header.svg" alt="Android-first systems — agents, automation, security, local AI" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=900&color=FF4D4D&center=true&vCenter=true&width=850&lines=AI+agents+that+actually+use+tools.;Android+is+a+computer.+Treat+it+like+one.;Automation+%3E+repetitive+human+clicking.;Build.+Break.+Measure.+Ship." alt="Typing SVG" />
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Michroma&weight=600&size=14&pause=950&color=FF4A4A&center=true&vCenter=true&width=950&lines=TOOLS%2C+NOT+JUST+TEXT.;ANDROID+IS+THE+CONTROL+PLANE.;AUTOMATE+THE+BORING+PART.;BUILD.+BREAK.+VERIFY.+SHIP." alt="System status" />
 
 <br>
 
@@ -16,29 +18,34 @@
 
 ---
 
-## `> whoami`
+## `// NO BIO. JUST SYSTEMS.`
 
-I'm **Yrjo**. I build Android-first AI and automation systems, local agents, scraping/data pipelines, security tooling and weird useful software.
+Android-first AI systems, local agents, automation, scraping/data pipelines, security tooling and software built to remove repetitive human clicking from the loop.
 
-I like systems where the model does more than produce text: it should **inspect, call tools, operate software, verify results and keep going**.
+A model gets interesting when it can **inspect state, call tools, change something, verify the result and continue**.
+
+If it can only type an answer, congratulations: expensive autocomplete wearing a blazer.
 
 ```text
-phone -> agent -> tools -> infrastructure -> result
-          ^                         |
-          +------ verification <---+
+ANDROID
+   |
+   v
+AGENT -> TOOLS -> INFRASTRUCTURE -> RESULT
+  ^                                  |
+  +----------- VERIFY ---------------+
 ```
 
-**Current bias:** local-first when it makes sense, cloud when it earns its keep, and Android is not treated like a toy client.
+**Local-first when useful. Cloud when it earns the invoice. Android is not a companion screen. It is the control plane.**
 
 ---
 
-## `> featured_systems`
+## `// THINGS THAT ACTUALLY EXIST`
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 📱 [PocketPort](https://github.com/levomm/pocketport)
+### [PocketPort](https://github.com/levomm/pocketport)
 **Run more GitHub tools on Android.**
 
 Scans desktop-first repositories, chooses a Termux/native/PRoot execution path, applies conservative fixes and prepares a runnable Android workspace.
@@ -48,7 +55,7 @@ Scans desktop-first repositories, chooses a Termux/native/PRoot execution path, 
 </td>
 <td width="50%" valign="top">
 
-### 🦀 [CLAW Bridge](https://github.com/levomm/claw-bridge)
+### [CLAW Bridge](https://github.com/levomm/claw-bridge)
 **Your phone is the control plane.**
 
 Android-first AI-agent harness for chat, code, automation, private Linux runtimes, SSH/remote machines and approval-driven execution.
@@ -60,8 +67,8 @@ Android-first AI-agent harness for chat, code, automation, private Linux runtime
 <tr>
 <td width="50%" valign="top">
 
-### 🤖 [SeekerClaw](https://github.com/levomm/SeekerClaw)
-**AI agent running on-device.**
+### [SeekerClaw](https://github.com/levomm/SeekerClaw)
+**An AI agent that lives on the device.**
 
 Android agent runtime with tool use, Telegram/Discord control, multi-provider models, MCP tools and autonomous workflows.
 
@@ -70,10 +77,10 @@ Android agent runtime with tool use, Telegram/Discord control, multi-provider mo
 </td>
 <td width="50%" valign="top">
 
-### 🧠 [osx01](https://github.com/levomm/osx01)
-**Small local coding agent.**
+### [osx01](https://github.com/levomm/osx01)
+**Small local coding agent. No cloud ceremony required.**
 
-Tool-calling coding agent built around Ollama and OpenAI-compatible APIs. Reads, searches, edits and executes inside real projects.
+Reads, searches, edits and executes inside real projects through Ollama and OpenAI-compatible tool calling.
 
 `Python` `Ollama` `tool calling` `local AI`
 
@@ -82,7 +89,7 @@ Tool-calling coding agent built around Ollama and OpenAI-compatible APIs. Reads,
 <tr>
 <td width="50%" valign="top">
 
-### 🎚️ [DNB CHOPSHOP](https://github.com/levomm/DNB_CHOPSHOP)
+### [DNB CHOPSHOP](https://github.com/levomm/DNB_CHOPSHOP)
 **Browser-based drum & bass workstation.**
 
 Transient analysis, slicing, variation generation, sequencing and stem/MIDI export in one browser workflow.
@@ -92,10 +99,10 @@ Transient analysis, slicing, variation generation, sequencing and stem/MIDI expo
 </td>
 <td width="50%" valign="top">
 
-### ✍️ [RAW TAG](https://github.com/levomm/raw-tag)
-**Draw first. AI second.**
+### [RAW TAG](https://github.com/levomm/raw-tag)
+**Draw first. Let the machine interfere afterwards.**
 
-Finger/stylus graffiti sketch lab that develops a user's own drawing through AI-assisted street-art transformations.
+Finger/stylus graffiti sketch lab that develops a real drawing through AI-assisted street-art transformations.
 
 `React` `TypeScript` `Gemini` `Cloudflare`
 
@@ -105,7 +112,7 @@ Finger/stylus graffiti sketch lab that develops a user's own drawing through AI-
 
 ---
 
-## `> stack`
+## `// PARTS BIN`
 
 <div align="center">
 
@@ -113,38 +120,41 @@ Finger/stylus graffiti sketch lab that develops a user's own drawing through AI-
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Jetpack%20Compose-111111?style=flat-square&logo=jetpackcompose&logoColor=4285F4" />
-<img src="https://img.shields.io/badge/Termux-111111?style=flat-square&logo=gnubash&logoColor=white" />
-<img src="https://img.shields.io/badge/Ollama-111111?style=flat-square&logo=ollama&logoColor=white" />
-<img src="https://img.shields.io/badge/OpenAI-111111?style=flat-square&logo=openai&logoColor=white" />
-<img src="https://img.shields.io/badge/Claude-111111?style=flat-square&logo=anthropic&logoColor=D97757" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-111111?style=flat-square&logo=githubactions&logoColor=2088FF" />
+<img src="https://img.shields.io/badge/JETPACK%20COMPOSE-111111?style=flat-square&logo=jetpackcompose&logoColor=4285F4" />
+<img src="https://img.shields.io/badge/TERMUX-111111?style=flat-square&logo=gnubash&logoColor=white" />
+<img src="https://img.shields.io/badge/OLLAMA-111111?style=flat-square&logo=ollama&logoColor=white" />
+<img src="https://img.shields.io/badge/OPENAI-111111?style=flat-square&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/CLAUDE-111111?style=flat-square&logo=anthropic&logoColor=D97757" />
+<img src="https://img.shields.io/badge/GITHUB%20ACTIONS-111111?style=flat-square&logo=githubactions&logoColor=2088FF" />
 
 </div>
 
 ---
 
-## `> operating_mode`
+## `// OPERATING MODE`
 
 ```yaml
 platform: Android + Termux + Linux
+
 focus:
-  - AI agents with real tool use
+  - agents with real tool use
   - mobile-first developer tooling
   - business automation
   - scraping and data pipelines
   - security testing and observability
   - local / self-hosted AI
+
 rules:
   - verify the result
-  - keep dangerous actions behind approval gates
-  - automate repeated work
+  - dangerous actions need approval gates
+  - repeated work should become code
+  - "AI-powered" is not a feature by itself
   - ship working systems before writing architecture poetry
 ```
 
 ---
 
-## `> github_telemetry`
+## `// TELEMETRY, BECAUSE APPARENTLY WE NEED GRAPHS`
 
 <div align="center">
 
@@ -163,12 +173,12 @@ rules:
 
 ### `BUILD > BREAK > VERIFY > SHIP`
 
-<sub>Most software does not need another dashboard. It needs fewer humans clicking the same button every Tuesday.</sub>
+<sub>No 97% Python skill bar. No inspirational quote. The repositories are right there.</sub>
 
 <br><br>
 
 <a href="https://github.com/levomm?tab=repositories">
-  <img src="https://img.shields.io/badge/VIEW%20ALL%20REPOS-520000?style=for-the-badge&logo=github&logoColor=white" alt="View all repositories" />
+  <img src="https://img.shields.io/badge/OPEN%20THE%20MACHINE%20ROOM-520000?style=for-the-badge&logo=github&logoColor=white" alt="View repositories" />
 </a>
 
 </div>
