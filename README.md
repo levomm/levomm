@@ -13,7 +13,7 @@
 
 <br />
 
-### About
+<img width="100%" src="./assets/section-about-2026.svg" alt="00 / ABOUT" />
 
 <pre>
 C:\> whoami
