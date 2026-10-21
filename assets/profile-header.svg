@@ -1,81 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="320" viewBox="0 0 1400 320">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#050505"/>
-      <stop offset="0.60" stop-color="#0d0d0d"/>
-      <stop offset="1" stop-color="#260000"/>
-    </linearGradient>
-    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.46" stop-color="#d8d8d8"/>
-      <stop offset="0.52" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#9a9a9a"/>
-    </linearGradient>
-    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4d0000"/>
-      <stop offset="0.5" stop-color="#ff3030"/>
-      <stop offset="1" stop-color="#4d0000"/>
-    </linearGradient>
-    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
-      <path d="M46 0H0V46" fill="none" stroke="#ffffff" stroke-opacity=".032" stroke-width="1"/>
-    </pattern>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-
-  <rect width="1400" height="320" rx="18" fill="url(#bg)"/>
-  <rect width="1400" height="320" rx="18" fill="url(#grid)"/>
-
-  <g opacity=".30" stroke="#ff3030" stroke-width="1">
-    <path d="M1030 30H1322M1105 52H1360M36 244H310"/>
-    <path d="M1282 18V112M1186 220V304M380 20V86"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="t d">
+<title id="t">LEVOMM / NEON TERMINAL</title><desc id="d">Cyber terminal showing LEVOMM, Android-first agents, automation, Linux and security in neon green on black.</desc>
+<defs>
+  <radialGradient id="bg" cx=".67" cy=".36" r="1"><stop offset="0" stop-color="#102819"/><stop offset=".46" stop-color="#07130d"/><stop offset="1" stop-color="#010503"/></radialGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#256d35"/><stop offset=".5" stop-color="#73ff82"/><stop offset="1" stop-color="#1e6332"/></linearGradient>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4cff70" stop-opacity=".14"/><stop offset="1" stop-color="#4cff70" stop-opacity="0"/></linearGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#48ff72" stroke-width=".65" opacity=".11"/></pattern>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".23"/></pattern>
+  <filter id="glow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+  <clipPath id="screen"><rect x="4" y="4" width="1392" height="512" rx="15"/></clipPath>
+</defs>
+<style>
+  .mono{font-family:'JetBrains Mono','IBM Plex Mono',Consolas,'Courier New',monospace}
+  .bright{fill:#a4ffb0}.green{fill:#52ff78}.dim{fill:#69ad7b}.muted{fill:#396b4b}
+  .cursor{animation:blink 1.15s steps(1,end) infinite}.pulse{animation:blink 3.5s ease-in-out infinite}
+  @keyframes blink{0%,48%{opacity:1}50%,99%{opacity:.18}100%{opacity:1}}
+  @media (prefers-reduced-motion:reduce){.cursor,.pulse{animation:none}}
+</style>
+<g clip-path="url(#screen)">
+  <rect width="1400" height="520" fill="url(#bg)"/>
+  <rect width="1400" height="520" fill="url(#grid)"/>
+  <g opacity=".14" class="mono" font-size="16" fill="#65ff82">
+    <text x="15" y="130">01 10 01 11 00 10 01 00 11</text>
+    <text x="15" y="162">10 00 11 01 10 01 10 11 00</text>
+    <text x="15" y="194">00 11 10 10 01 01 11 00 01</text>
+    <text x="15" y="226">11 01 00 11 10 00 01 10 11</text>
   </g>
-
-  <rect x="55" y="53" width="10" height="148" fill="#ff3030" filter="url(#glow)"/>
-  <rect x="76" y="60" width="3" height="134" fill="#970000"/>
-  <rect x="94" y="72" width="2" height="112" fill="#3e0000"/>
-
-  <text x="112" y="142"
-    fill="url(#metal)"
-    font-family="'Eurostile Extended','Microgramma D Extended','Bank Gothic','Arial Black',sans-serif"
-    font-size="74"
-    font-weight="900"
-    letter-spacing="2"
-    textLength="1172"
-    lengthAdjust="spacingAndGlyphs">
-    ANDROID-FIRST SYSTEMS
-  </text>
-
-  <text x="114" y="192"
-    fill="#ff3030"
-    font-family="'Eurostile Extended','Microgramma D Extended','Bank Gothic','Arial Black',sans-serif"
-    font-size="22"
-    font-weight="700"
-    letter-spacing="4"
-    textLength="980"
-    lengthAdjust="spacingAndGlyphs">
-    AGENTS // AUTOMATION // SECURITY // LOCAL AI
-  </text>
-
-  <line x1="114" y1="224" x2="1290" y2="224" stroke="url(#red)" stroke-width="1.4"/>
-  <circle cx="114" cy="224" r="3.5" fill="#ff3030"/>
-  <circle cx="1290" cy="224" r="3.5" fill="#ff3030"/>
-
-  <text x="114" y="263"
-    fill="#a4a4a4"
-    font-family="'Eurostile Extended','Bank Gothic','Arial',sans-serif"
-    font-size="14"
-    letter-spacing="3.4">
-    BUILD THINGS THAT DO THE BORING PART THEMSELVES.
-  </text>
-
-  <text x="114" y="289"
-    fill="#626262"
-    font-family="'Eurostile Extended','Bank Gothic','Arial',sans-serif"
-    font-size="11.5"
-    letter-spacing="2.1">
-    IF IT STILL NEEDS SIX CLICKS EVERY TUESDAY, IT IS NOT AUTOMATION YET.
-  </text>
+  <path d="M0 440 L375 440 L490 519 H0Z" fill="url(#fade)" opacity=".45"/>
+  <path d="M1400 80 L1110 80 L1040 0 H1400Z" fill="url(#fade)" opacity=".22"/>
+  <rect x="12" y="12" width="1376" height="496" rx="16" fill="none" stroke="#2e8342" stroke-width="1.3"/>
+  <path d="M28 92V26H92M1308 26h64v68M28 423v69h68M1305 492h67v-68" fill="none" stroke="#6bff89" stroke-width="3.5" opacity=".8" filter="url(#glow)"/>
+  <rect x="38" y="32" width="1324" height="43" rx="8" fill="#07170d" stroke="#2e6c40" stroke-width="1"/>
+  <circle cx="61" cy="53" r="5" fill="#26773d"/><circle cx="80" cy="53" r="5" fill="#399d53"/><circle cx="99" cy="53" r="5" fill="#63ff83" filter="url(#glow)"/>
+  <text x="123" y="59" class="mono dim" font-size="15" letter-spacing="1.3">levomm@android: ~/github/profile</text>
+  <text x="1337" y="59" text-anchor="end" class="mono green" font-size="14" letter-spacing="2">● SESSION ACTIVE</text>
+  <path d="M76 111V424" stroke="#327e43" stroke-width="2"/>
+  <circle cx="76" cy="126" r="5" fill="#66ff88" filter="url(#glow)"/>
+  <circle cx="76" cy="423" r="3.5" fill="#66ff88"/>
+  <text x="103" y="136" class="mono green" font-size="19" font-weight="700">$ ./init --profile levomm --mode terminal</text>
+  <text x="103" y="190" class="mono dim" font-size="18" letter-spacing="5">IDENTITY / LOADED</text>
+  <text x="98" y="292" class="mono bright" font-size="124" font-weight="900" letter-spacing="8" filter="url(#glow)">LEVOMM</text>
+  <rect x="103" y="310" width="630" height="2" fill="url(#edge)"/>
+  <text x="103" y="348" class="mono green" font-size="25" font-weight="700" letter-spacing="1.5">BUILD. BREAK. VERIFY. SHIP.</text>
+  <text x="103" y="390" class="mono dim" font-size="18">AI AGENTS  /  AUTOMATION  /  SECURITY</text>
+  <text x="103" y="420" class="mono dim" font-size="18">ANDROID + TERMUX + LINUX</text>
+  <g>
+    <rect x="813" y="103" width="520" height="346" rx="11" fill="#040e08" fill-opacity=".94" stroke="#39874d" stroke-width="1.4"/>
+    <rect x="813" y="103" width="520" height="46" rx="11" fill="#112519"/>
+    <path d="M814 139H1332" stroke="#366e45"/>
+    <text x="839" y="131" class="mono bright" font-size="19" font-weight="700">[ SYS://LEVOMM ]</text>
+    <text x="1308" y="130" class="mono green" font-size="14" text-anchor="end">RUNLEVEL 05</text>
+    <text x="842" y="181" class="mono dim" font-size="16">SERVICE</text>
+    <text x="1285" y="181" class="mono dim" font-size="16" text-anchor="end">STATE</text>
+    <path d="M842 190H1304" stroke="#204e2c" stroke-dasharray="5 7"/>
+    <g class="mono" font-size="19">
+      <text x="842" y="220" class="bright">android.termux</text><text x="1296" y="220" class="green" text-anchor="end">[ ONLINE ]</text>
+      <text x="842" y="254" class="bright">agents.tool-use</text><text x="1296" y="254" class="green" text-anchor="end">[ ONLINE ]</text>
+      <text x="842" y="288" class="bright">linux.runtime</text><text x="1296" y="288" class="green" text-anchor="end">[ ONLINE ]</text>
+      <text x="842" y="322" class="bright">security.audit</text><text x="1296" y="322" class="green" text-anchor="end">[ READY  ]</text>
+    </g>
+    <path d="M842 345H1304" stroke="#204e2c"/>
+    <text x="842" y="375" class="mono dim" font-size="14" letter-spacing="2">SIGNAL / AGENT BUS</text>
+    <path d="M842 413H1304" stroke="#286f3d" stroke-width="1" opacity=".8"/>
+    <path d="M842 411 L873 411 L892 399 L910 418 L924 396 L938 408 L958 407 L974 385 L989 413 L1002 410 L1022 378 L1044 418 L1061 406 L1086 409 L1102 390 L1119 402 L1133 412 L1156 411 L1179 384 L1195 404 L1214 412 L1235 398 L1253 412 L1273 404 L1304 409" fill="none" stroke="#55ff7b" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M842 411 L873 411 L892 399 L910 418 L924 396 L938 408 L958 407 L974 385 L989 413 L1002 410 L1022 378 L1044 418 L1061 406 L1086 409 L1102 390 L1119 402 L1133 412 L1156 411 L1179 384 L1195 404 L1214 412 L1235 398 L1253 412 L1273 404 L1304 409 L1304 434 L842 434Z" fill="url(#fade)"/>
+  </g>
+  <rect x="48" y="466" width="1304" height="32" rx="4" fill="#07170c" stroke="#245837"/>
+  <text x="66" y="488" class="mono green" font-size="17">root@levomm:~#</text>
+  <text x="251" y="488" class="mono bright" font-size="17">ready_for_input</text>
+  <rect x="442" y="474" width="10" height="16" fill="#76ff8e" class="cursor"/>
+  <text x="1334" y="488" class="mono dim" font-size="13" text-anchor="end" letter-spacing="2">NO FLUFF. JUST WORKING SYSTEMS.</text>
+  <rect width="1400" height="520" fill="url(#scan)" pointer-events="none"/>
+</g>
 </svg>
