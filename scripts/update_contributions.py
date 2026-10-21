@@ -17,13 +17,13 @@ from zoneinfo import ZoneInfo
 LOGIN = "levomm"
 FIRST = date(2026, 4, 1)
 LAST = date(2026, 10, 31)
-TARGET = Path("assets/activity-2026.svg")
+TARGET = Path("assets/activity-2026-gray.svg")
 COLORS = {
-    "NONE": "#18231e",
-    "FIRST_QUARTILE": "#0a4524",
-    "SECOND_QUARTILE": "#117d3b",
-    "THIRD_QUARTILE": "#21ac50",
-    "FOURTH_QUARTILE": "#4bdd76",
+    "NONE": "#c4c7c3",
+    "FIRST_QUARTILE": "#a2a6a2",
+    "SECOND_QUARTILE": "#808580",
+    "THIRD_QUARTILE": "#585e59",
+    "FOURTH_QUARTILE": "#282d29",
 }
 MONTHS = ["", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
 
@@ -110,16 +110,16 @@ def retrieve_calendar():
 
 def build_svg(today, days):
     first_sunday = FIRST - timedelta(days=(FIRST.weekday() + 1) % 7)
-    pitch, square, x0, y0 = 43, 35, 61, 133
+    x_pitch, y_pitch, square, x0, y0 = 41, 36, 30, 77, 111
     total = sum(count for count, _ in days.values())
     result = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500" role="img">',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img">',
         f'<title>GitHub activity for {LOGIN}: {FIRST} through {today} ({total} contributions)</title>',
-        '<rect width="1400" height="500" rx="14" fill="#0d1216"/>',
-        '<rect x="1.5" y="1.5" width="1397" height="497" rx="13" fill="none" stroke="#333b3b" stroke-width="2"/>',
-        '<text x="60" y="52" font-family="monospace" font-weight="900" font-size="27" letter-spacing="2" fill="#e4f0e8">ACTIVITY.LOG</text>',
-        f'<text x="1340" y="51" text-anchor="end" font-family="monospace" font-size="19" fill="#74c18b">01 APR - {today.day:02d} {MONTHS[today.month]} 2026</text>',
-        '<path d="M60 76H1340" stroke="#29392e" stroke-width="2"/>',
+        '<rect width="1400" height="420" rx="12" fill="#d7d8d5"/>',
+        '<rect x="1.5" y="1.5" width="1397" height="417" rx="11" fill="none" stroke="#b8bdb5" stroke-width="2"/>',
+        '<text x="60" y="45" font-family="monospace" font-weight="900" font-size="25" letter-spacing="2" fill="#1e2520">ACTIVITY.LOG</text>',
+        f'<text x="1340" y="45" text-anchor="end" font-family="monospace" font-size="19" fill="#515b53">01 APR - {today.day:02d} {MONTHS[today.month]} 2026</text>',
+        '<path d="M60 69H1340" stroke="#aeb4ad" stroke-width="2"/>',
     ]
 
     for month in range(4, 11):
@@ -127,29 +127,28 @@ def build_svg(today, days):
         if first_day > today:
             break
         week = (first_day - first_sunday).days // 7
-        x = x0 + week * pitch + 2
+        x = x0 + week * x_pitch + 2
         result.append(
-            f'<text x="{x}" y="113" font-family="monospace" font-size="23" fill="#cfd5d2">{MONTHS[month].title()}</text>'
+            f'<text x="{x}" y="100" font-family="monospace" font-size="21" fill="#525952">{MONTHS[month].title()}</text>'
         )
 
     for d in sorted(days):
         count, level = days[d]
         col = (d - first_sunday).days // 7
         row = (d.weekday() + 1) % 7
-        x, y = x0 + col * pitch, y0 + row * pitch
+        x, y = x0 + col * x_pitch, y0 + row * y_pitch
         color = COLORS[level]
         label = html.escape(f"{d.isoformat()}: {count} contribution" + ("" if count == 1 else "s"))
         result.append(
-            f'<rect x="{x}" y="{y}" width="{square}" height="{square}" rx="6" fill="{color}"><title>{label}</title></rect>'
+            f'<rect x="{x}" y="{y}" width="{square}" height="{square}" rx="5" fill="{color}"><title>{label}</title></rect>'
         )
 
-    # A legend is data key, not an invented success indicator.
-    result.append('<text x="936" y="469" font-family="monospace" font-size="20" fill="#a1aca9">Less</text>')
+    result.append('<text x="930" y="398" font-family="monospace" font-size="18" fill="#545a53">Less</text>')
     for i, color in enumerate(COLORS.values()):
-        result.append(f'<rect x="{1000 + 40 * i}" y="449" width="30" height="30" rx="5" fill="{color}"/>')
-    result.append('<text x="1215" y="469" font-family="monospace" font-size="20" fill="#a1aca9">More</text>')
+        result.append(f'<rect x="{1000 + 38 * i}" y="378" width="25" height="25" rx="4" fill="{color}"/>')
+    result.append('<text x="1210" y="398" font-family="monospace" font-size="18" fill="#545a53">More</text>')
     result.append(
-        f'<text x="60" y="471" font-family="monospace" font-size="17" fill="#7b9683">'
+        f'<text x="60" y="399" font-family="monospace" font-size="16" fill="#555d56">'
         f'{total} public contributions | refreshed {today.isoformat()} | GitHub GraphQL</text>'
     )
     result.append('</svg>')
