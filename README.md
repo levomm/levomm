@@ -5,9 +5,7 @@
 
 <br />
 
-<a href="https://github.com/levomm?tab=overview"><img width="100%" src="./assets/activity-2026.svg" alt="Real GitHub contributions from April through October 2026; exact date and counts updated from GitHub's API" /></a>
-
-<sub>ACTIVITY.LOG | 01 APR - OCT 2026 | data: GitHub contribution calendar | last synced date is shown above</sub>
+<a href="https://github.com/levomm?tab=overview"><img width="92%" src="./assets/activity-2026-gray.svg" alt="Real GitHub contributions from April through October 2026; exact date and counts updated from GitHub's API" /></a>
 
 </div>
 
