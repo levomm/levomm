@@ -105,7 +105,7 @@ BATROM/
 | Vastuste kontroll, turvalisus ja funktsioonitestid | 4–10 h |
 | **Kokku** | **14–30 h** |
 
-Agent aitab selgitada teenuseid, leida sobiva kontaktikanali ja esitada pakkumispäringu. Vastused peavad tuginema kinnitatud sisule; automaatselt ei lubata fikseerimata teenuseid, tähtaegu ega hindu.
+Agent aitab selgitada teenuseid, leida sobiva kontaktikanali ja esitada pakkumispäringu. Vastused peavad tuginema kinnitatud sisule; automaatselt ei anta ettevõtte nimel kinnitamata lubadusi.
 
 ## 07 · Uus agentic scroll-trigger veebileht
 
