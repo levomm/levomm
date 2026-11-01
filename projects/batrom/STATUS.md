@@ -1,150 +1,117 @@
-# BATROM OY | Projekti tööde ülevaade
+# BATROM OY | Tööde tegevusjärjekord
 
 **Seisuga:** 01.11.2026  
-**Veebileht:** https://batrom.fi  
-**Fookus:** tehniline töökindlus, turvalisus, otsingunähtavus ja võimalik uusarendus
+**Veebileht:** batrom.fi  
+**Tähised:** `[OK]` tehtud ja kontrollitud · `[~]` pooleli · `[ ]` teha · `[?]` valik / otsus
 
-## Kulunud aeg ja töömaht
-
-| Näitaja | Seis |
-|---|---:|
-| **Tegelikult kulunud aeg** | Mõõtmine seadistamisel; varasemat aega pole veel koondatud |
-| **AI tokenid** | Mõõdetud andmed puuduvad |
-| **Põhitööde järelejäänud maht** | **8–16 h** |
-| **Võimalikud lisaarendused** | **114–232 h** |
-| **Kõik etapid kokku** | **122–248 h** |
-
-**Tundide tähendus:** tehtud tööde ajakulu ja tulevaste tööde hinnang on eri näitajad. Hinnangud kajastavad töötunde, mitte kalendriaega. AI tokenite arv on eraldi mõõdik, mitte töötundide asendaja.
-
-## Projekti tööpuu
+## Tööde puu
 
 ```text
 BATROM/
-├── 01_TEHTUD/
+│
+├── 00_TEHTUD/
 │   ├── [OK] Esmane turvaaudit ja korduskontroll
 │   ├── [OK] WordPressi põhifailide ja andmebaasi kontroll
-│   ├── [OK] Pluginate ja versioonide inventuur
-│   ├── [OK] HTTPS-i ja suunamiste kontroll
-│   ├── [OK] Serveripoolne varukoopia
+│   ├── [OK] Aegunud pistikprogrammide inventuur
+│   ├── [OK] Serveri ja HTTPS-i kontroll
 │   ├── [OK] Krüpteeritud USB-varukoopia
 │   ├── [OK] Zone+ taastetõmmis
-│   ├── [OK] staging.batrom.fi loomine
-│   ├── [OK] Testkeskkonna SSL ja PHP 8.3 seadistus
-│   └── [OK] Testkeskkonna avalehe visuaalne kontroll
+│   ├── [OK] staging.batrom.fi loodud
+│   ├── [OK] Stagingu SSL ja PHP 8.3
+│   └── [OK] Testkeskkonna avaleht avaneb
 │
-├── 02_POOLELI/
-│   ├── [~] Testkeskkonna failide/andmebaasi eraldatus
-│   ├── [~] Testkeskkonna pluginad ja teemad
-│   ├── [~] Elementor + Elementor Pro ühilduvus
-│   ├── [~] Failide kontrollsummade kõrvalekallete ülevaatus
-│   └── [~] Brauserite kujunduserinevuse kontroll
+├── 01_KÕIGEPEALT_SAIT_KORDA/                 8–16 h
+│   ├── [~] Stagingu andmebaasi ja failide eraldatus
+│   ├── [ ] Stagingu kaitse ja otsingust peitmine
+│   ├── [ ] Testkeskkonna päris e-kirjade blokeerimine
+│   ├── [ ] Oluliste pluginate turvaline uuendamine
+│   ├── [ ] Elementor + Elementor Pro ühilduvustest
+│   ├── [ ] Kontaktvormi parandamine ja päringukatse
+│   ├── [ ] Menüü, teenuste ja mobiilivaate testid
+│   ├── [ ] Varukoopia taastamise kontroll
+│   ├── [ ] Kontrollitud muudatused päris veebilehel
+│   └── [ ] Kordusaudit
 │
-├── 03_TEHNILINE_KORRASTAMINE/        [8–16 h]
-│   ├── [ ] Testkeskkonna kaitse ja eraldatus
-│   ├── [ ] Testkeskkonnast päris kirjade saatmise vältimine
-│   ├── [ ] Pluginate turvaline uuendamine ja kontroll
-│   ├── [ ] Kontaktvormi parandamine ja saatmistest
-│   ├── [ ] Mobiili- ja funktsioonitestid
-│   ├── [ ] Kontrollitud paranduste viimine põhisaidile
-│   └── [ ] Kordusaudit ja taastamise proov
+├── 02_SEO_EELTÖÖ_JA_SUUNA_VALIK/             8–15 h*
+│   ├── [ ] Soome märksõnade ja konkurentide analüüs
+│   ├── [ ] Olemasolevate teenuste ning sisu kaardistus
+│   ├── [ ] Google Search Console / Maps / indekseerimine
+│   ├── [ ] SEO tehnilised kitsaskohad ja sisukava
+│   └── [?] OTSUS: kas jätkata WordPressiga või teha uus sait?
+│       │
+│       ├── A) JÄTKAME WORDPRESSIGA
+│       │   ├── [?] Tugevam turvakaitse ja seire       10–22 h
+│       │   ├── [ ] SEO rakendamine olemasoleval saidil 22–45 h*
+│       │   ├── [?] AI-abimees veebilehele             14–30 h
+│       │   ├── [?] AI-agentide päringute vastuvõtt    12–24 h
+│       │   └── [ ] Kontrollitud kasutuselevõtt
+│       │
+│       └── B) EHITAME UUE AGENTIC SAIDI
+│           ├── [?] Uue saidi kinnitamine ja lähteülesanne
+│           ├── [ ] Uus tehniline scroll-trigger sait 60–120 h
+│           │   ├── Disain, kerimisanimeeringud, videod
+│           │   ├── Mobiil, kiirus, ligipääsetavus
+│           │   ├── Teenuste sisu, vormid ja haldus
+│           │   ├── Turvalisus ja varukoopiad
+│           │   └── Nõusolekupõhine külastusanalüütika
+│           ├── [ ] SEO sisuloome ja migratsioon      22–45 h*
+│           ├── [?] AI-abimees (eraldi täisfunktsioonid) 14–30 h
+│           ├── [?] AI-agentide päringute vastuvõtt   12–24 h
+│           └── [ ] Testimine, ümbersuunamised ja avaldamine
 │
-├── 04_LISA_MAKSIMAALNE_SEO/          [30–60 h]
-├── 05_LISA_TURVAKAITSE_JA_SEIRE/     [10–22 h]
-├── 06_LISA_AI_AGENT/                 [14–30 h]
-│
-└── 07_LISA_UUS_AGENTIC_VEEBILEHT/   [60–120 h]
+└── 03_PÄRAST_AVALDAMIST/
+    ├── [ ] Päringute ja veateadete jälgimine
+    ├── [?] SEO pidev arendus               4–8 h/kuus
+    └── [?] Turvaseire ja hooldus           1–3 h/kuus
 ```
 
-## 03 · Olemasoleva veebilehe tehniline lõpetamine
+* SEO eeltöö **8–15 h** ning SEO rakendamine **22–45 h** moodustavad kokku **30–60 h**, mitte kaks eri SEO-projekti. Uue saidi arenduse ja SEO rakenduse töödes võib olla kattuvust.
 
-| Töö | Hinnang |
+## Mida tuleb otsustada ja millal?
+
+### 1. Kas jääda WordPressi juurde või ehitada uus veebileht?
+
+**Otsuse koht:** pärast esmase saidi turvaprobleemide parandamist ja SEO eeltööd, **enne suuremahulist SEO sisutööd, uut kujundust või AI-integratsiooni**.
+
+- **WordPressi jätkamine:** vana sait tehakse tugevamaks ja nähtavamaks; vähem ümbertegemist.
+- **Uue veebilehe ehitamine:** eraldi agentic/scroll-trigger arendus. Praegune sait jääb toimima kuni uue kasutuselevõtuni.
+
+### 2. Kas lisada täiendav kaitse?
+
+**Otsuse koht:** kohe, kui on selge, kas põhisait jääb WordPressile või liigub uuele platvormile. Turvaline ligipääs, uuendused, vormide kaitse ja põhiseire on niikuinii vajalikud. **Täiendav kaitse (10–22 h)** tähendab näiteks tugevamat liiklusfiltrit, täiendavat seiret ja rangemat õiguste haldust. Uue saidi puhul tuleb ulatus ümber hinnata, sest osa kaitsest kuulub juba uusarendusse.
+
+### 3. Kas veebilehele on vaja AI-abimeest?
+
+**Otsuse koht:** siis, kui teenused ja pakkumispäringu teekond on paigas, aga **enne lõpliku kasutajaliidese ehitamist**. Uue saidi korral tuleks vältida esmalt vanale WordPressile ja hiljem uuele saidile eraldi sama agendi arendamist.
+
+### 4. Kas süsteem võtab vastu teiste AI-agentide päringuid?
+
+**Otsuse koht:** pärast ettevõtte teenuste ja päringu väljade kokkuleppimist. **Valikuline arendus 12–24 h**: masinloetav teenuseinfo, turvaline päringuliides, päringute kontroll ja automaatne edastamine. Ettevõtte nimel lõplikku pakkumist ei saadeta ilma kontrollita. See on ettevalmistus võimaluseks, et edaspidi saadab osa kliente päringuid oma AI-assistendi kaudu.
+
+### 5. Kas teha külastaja teekonna põhjal kohanduv veebileht?
+
+**Otsuse koht:** uue saidi disaini ja analüütika kavandamisel. Uue saidi 60–120 tunni vahemikku kuulub scroll-trigger kujundus ning nõusolekupõhised ja privaatsust arvestavad kasutusmõõdikud. Külastajate varjatud isikutuvastamine ei ole eesmärk.
+
+## Ajahinnangud
+
+| Etapp | Hinnang |
 |---|---:|
-| Stagingu eraldatus, indekseerimise ja ligipääsu kaitse | 1–2 h |
-| Pluginad, Elementor ja Elementor Pro | 3–6 h |
-| Kontaktvormi parandamine ning kirjade kohaletoimetamise kontroll | 1–3 h |
-| Funktsioonitestid, kinnitatud parandused ja kordusaudit | 3–5 h |
-| **Kokku** | **8–16 h** |
+| Olemasoleva saidi tehniline korrastamine | **8–16 h** |
+| Maksimaalne SEO, mõlemas valikus kokku | **30–60 h** |
+| Täiendav turvakaitse, valikuline | **10–22 h** |
+| AI-abimees, valikuline | **14–30 h** |
+| Agentidelt päringute vastuvõtt, valikuline | **12–24 h** |
+| Täiesti uus agentic scroll-trigger veebileht, valikuline | **60–120 h** |
 
-**Valmimise tingimus:** uuendatud põhifunktsioonid töötavad, kontaktvormi päring jõuab kohale, testkeskkond on eraldi ning kontrollitud muudatused on põhisaidil kinnitatud.
+**Kindel tööjada (tehniline korrastamine + täismahus SEO): 38–76 töötundi.** Ülejäänud mahud lisanduvad ainult vastava valiku korral. Mõned ülesanded võivad kattuda, seetõttu ei liideta kõiki valikulisi variante ühte üldsummasse.
 
-## 04 · Maksimaalne SEO
+## Tehtud kontrollide seis
 
-**Eesmärk:** tugev tehniline ja sisuline nähtavus Soome otsingutes, eelkõige Batromi tegelike teenuste ja teeninduspiirkonna lõikes.
+- WordPressi põhifailide kontroll ja andmebaasi tervisekontroll läbisid testi.
+- Kontrolli ajal vajas uuendamist 15 aktiivset pluginat; oluline on Elementor ja Pro koos üle testida.
+- Kontaktvormi rike pole veel parandatuks kinnitatud.
+- Krüpteeritud USB-varukoopia arhiivikontroll läbis testi. Täielik taastamise proov on veel tegemata.
+- Zone+ tõmmis on loodud; Zone+ tõmmised säilivad 14 päeva.
+- Testkeskkonna avaleht avaneb, kuid selle täielik eraldatus põhisaidist vajab kontrollimist.
 
-| Töö | Hinnang |
-|---|---:|
-| Tehniline SEO: indeks, sitemap, canonical, redirect, schema, Search Console | 5–10 h |
-| Soome märksõnad, konkurendid ja otsingukavatsused | 5–10 h |
-| Teenuselehed, usaldusväärne soomekeelne sisu, referentsid ja KKK | 8–18 h |
-| Kohalik SEO: Tuusula/Uusimaa, Google Business Profile ja Maps | 4–8 h |
-| Mobiili kiirus, Core Web Vitals ja piltide optimeerimine | 3–7 h |
-| Päringute mõõtmine, SEO kontroll ja raport | 5–7 h |
-| **Kokku** | **30–60 h** |
-
-**Jooksev arendusaeg:** SEO seire ja täiustused ligikaudu **4–8 h kuus**. Otsingutulemuste kindlat positsiooni ei saa ette garanteerida.
-
-## 05 · Täiendav turvakaitse ja seire
-
-| Töö | Hinnang |
-|---|---:|
-| Kasutajarollid, ligipääsud, MFA | 2–4 h |
-| WAF, sisselogimise piirangud ja botikaitse | 3–6 h |
-| WordPressi ja veebiserveri turvaseadistused | 2–5 h |
-| Seire, teavitused, varukoopiate ja taastamise kord | 3–7 h |
-| **Kokku** | **10–22 h** |
-
-**Jooksev jälgimine:** ligikaudu **1–3 h kuus**. See etapp täiendab tehnilist korrastamist, mitte ei korda samu uuendustöid.
-
-## 06 · AI-agent olemasoleval veebilehel
-
-| Töö | Hinnang |
-|---|---:|
-| Teenuste ja korduvate küsimuste teadmistebaas | 3–6 h |
-| Soomekeelne veebivestlus ja kontekst | 3–6 h |
-| Hinnapäringute kogumine ja suunamine | 4–8 h |
-| Vastuste kontroll, turvalisus ja funktsioonitestid | 4–10 h |
-| **Kokku** | **14–30 h** |
-
-Agent aitab selgitada teenuseid, leida sobiva kontaktikanali ja esitada pakkumispäringu. Vastused peavad tuginema kinnitatud sisule; automaatselt ei anta ettevõtte nimel kinnitamata lubadusi.
-
-## 07 · Uus agentic scroll-trigger veebileht
-
-**Eraldi täismahus uusarendus.** Tänane veebileht jääb toimima seni, kuni uus versioon on testitud ja kasutuselevõtuks valmis.
-
-| Töö | Hinnang |
-|---|---:|
-| Kontseptsioon, tehniline visuaalne suund ja UX | 8–16 h |
-| Scroll-trigger stseenid, animatsioonid ja sujuvad üleminekud | 16–30 h |
-| Mobiil, ligipääsetavus, laadimiskiirus ja SEO | 10–18 h |
-| Agentic käitumine ja kontekstipõhised teenusesoovitused | 9–18 h |
-| Külastusteekondade analüütika ja nõusolekuhaldus | 8–16 h |
-| Sisu, testimine, ümbersuunamised ja avaldamine | 9–22 h |
-| **Kokku** | **60–120 h** |
-
-**Külastuskäitumise analüüs:** vaadatud teenused, kerimissügavus, CTA-nupud ja päringuteekond. Analüüs ja kohanduvad elemendid rakendatakse privaatsuspõhiselt ning vajaduse korral nõusoleku alusel. Võimalik tehniline suund: Next.js, GSAP/Motion, AI API ja privaatsust arvestav analüütika.
-
-## Ajamahu koond
-
-| Etapp | Järelejäänud töötunnid |
-|---|---:|
-| 03 · Tehniline korrastamine | **8–16 h** |
-| 04 · Maksimaalne SEO | **30–60 h** |
-| 05 · Täiendav turvakaitse ja seire | **10–22 h** |
-| 06 · AI-agent | **14–30 h** |
-| 07 · Uus agentic veebileht | **60–120 h** |
-| **Kõik etapid kokku** | **122–248 h** |
-
-Etapid 04–07 on **eraldi arendusvõimalused**. Nende vahel võib olla taaskasutatavaid osi, eelkõige AI-agentis ja uues veebilehes. Kui olemasolevale saidile eraldi AI-agentit ei tehta, on ülejäänud etappide summa **108–218 h**. Jooksvad igakuised tunnid ei sisaldu ühekordses kogusummas.
-
-## Kinnitatud tehnilised tähelepanekud
-
-- WordPressi põhifailide kontroll ja andmebaasi kontroll läbisid testi.
-- Pluginate inventuuris oli 15 aktiivsel pluginal saadaval uuendusi; uuenduste testimine on veel pooleli.
-- Kontaktvormi toimimist tuleb pärast parandusi uuesti kinnitada.
-- Varukoopiad on loodud, kuid täiemahulist taastamist pole veel läbi katsetatud.
-- Testkeskkond avaneb. Selle täielik eraldatus põhisaidist vajab enne uuendusteste kontrolli.
-- Zone+ tõmmiseid säilitatakse 14 päeva.
-
----
-
-**Staatuse tähendus:** `[OK]` kontrollitud, `[~]` pooleli, `[ ]` tegemata. Töömahud on hinnangud ja neid täpsustatakse töö käigus.
+**Kulunud aeg:** varasemate tööde tegelikke tunde ei ole veel usaldusväärselt koondatud. **AI tokenid:** mõõdetud koondandmed puuduvad. Kõik dokumendis olevad tunnid on **tulevaste tööde hinnangud**, mitte juba kulunud aeg.
